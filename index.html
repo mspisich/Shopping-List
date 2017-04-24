@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Shopping List</title>
+		<link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+	</head>
+	<body>
+		<script
+			  src="https://code.jquery.com/jquery-3.2.1.min.js"
+			  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+			  crossorigin="anonymous"></script>
+			  
+		<script src="Lab19.js"></script>
+		
+		<h1>Shopping List:</h1>
+		
+		<h2>Available Items:</h2>
+		<ul id="AvailableItems">
+			<li><button type="button" id="AddMilk" class="AddToCartButton" onclick="addItem('0')">Add to cart</button> Milk ($2.00)</li>
+			<li><button type="button" id="AddEggs" class="AddToCartButton" onclick="addItem('1')">Add to cart</button> Eggs ($2.00)</li>
+			<li><button type="button" id="AddCoffee" class="AddToCartButton" onclick="addItem('2')">Add to cart</button> Coffee ($4.00)</li>
+			<li><button type="button" id="AddSalad" class="AddToCartButton" onclick="addItem('3')">Add to cart</button> Lettuce ($1.50)</li>
+		</ul>
+		
+		<h2>Items in Cart:</h2>
+		<button type="button" id="CartRefreshButton" onclick="refreshCart()">Refresh</button>
+		<button type="button" id="ClearCartButton" onclick="clearCart()">Clear Cart</button>
+		<ul id="shoppingCart">
+			<li>No items currently in cart!</li>
+		</ul>
+		<h3 id="total">Total: $0.00</h3>
+	</body>
+</html>

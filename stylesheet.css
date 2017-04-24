@@ -1,0 +1,13 @@
+body{
+	background-color: #b3b3b3;
+	font-family: Ariel, sans-serif;
+}
+
+h1{
+	font-size: 38pt;
+	text-decoration: underline;
+}
+
+#AvailableItems{
+	list-style: none;
+}
